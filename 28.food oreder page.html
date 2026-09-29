@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Order</title>
+</head>
+<body>
+    <h2> food order from </h2>
+    
+
+    <a href="#home">Home</a> | 
+    <a href="#about">About</a> | 
+    <a href="#contact">Contact</a> | 
+    <a href="#order">Order</a>
+
+    <hr>
+
+    <h2 id="home">Home</h2>
+    <p>Welcome to our online food delivery website. Order fresh food here!</p>
+
+    <hr>
+    <h2 id="about">About</h2>
+    <p>We provide fresh, tasty, and hygienic food delivered directly to you.</p>
+
+    <hr>
+
+    <h2 id="contact">Contact</h2>
+    <p>Phone: +91 9876543210</p>
+    <p>Email: foodorder@example.com</p>
+
+    <hr>
+    <h2 id="order">Order</h2>
+    <form action="orderfood.html" method="get">
+        <p>Name: <input type="text" name="name" required></p>
+        <p>Phone: <input type="tel" name="phone" required></p>
+        <p>Food Item:
+            <select name="food" required>
+                <option>Pizza</option>
+                <option>Burger</option>
+                <option>Sandwich</option>
+                <option>passta</option>
+                <option>panipuri</option>
+            </select>
+        </p>
+        <p>Quantity: <input type="number" name="quantity" value="1"></p>
+        <p>Address: <textarea name="address"></textarea></p>
+        <br><br>
+        <label for="payment">Payment Method:</label>
+        <input type="radio" name="payment" value="cash" id="cash"> Cash on Delivery
+        <input type="radio" name="payment" value="card" id="card"> Credit/Debit Card
+        <input type="radio" name="payment" value="cash" id="cash"> UPI
+        <br><br>
+
+        <p><input type="submit" value="Submit Order"></p>
+    </form>
+
+</body>
+</html>
